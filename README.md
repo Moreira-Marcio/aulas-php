@@ -1,6 +1,6 @@
-# Aulas e atividades 
+# Aulas e atividades de programação PHP
 
-## Aulas PHP
+## Repositorio ultilizado durante aulas de programação PHP
 
 - Sintaxe geral
     - Trabalhando com PHP
