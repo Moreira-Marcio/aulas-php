@@ -11,7 +11,7 @@
     <h2>Arrays numericos/indxados</h2>
     <?php
     //sintaxe com colchetes
-    $bandas= ["Charlie Browns Jr","Rush","Slayer"];
+    $bandas= ["Charlie Browns Jr","Rush","Slayer", "Raimundos"];
 
     //sintaxe função do array
     $cursos= array ("HTML5","Node.js","PHP","SQL");
