@@ -10,7 +10,7 @@
 
     <?php
     
-    $valorCompra = 900;
+    $valorCompra = 2000;
 
     if ($valorCompra> 5000){
         $desconto = 0.15;
