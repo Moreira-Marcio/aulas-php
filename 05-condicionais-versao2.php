@@ -31,10 +31,6 @@ if($numero > 1){
 <?php
 }
 ?>
-
-
-
-
     <hr>
 
     <h2>Composta usando if e else</h2>
@@ -42,22 +38,31 @@ if($numero > 1){
  $produto = "ultraboock Azus";
  $qtEstoque = 10;//o que temos
  $qtCritica = 5;//minimo necessario
+?>
+<h3><?=$produto?></h3>"
+<h4>Quantidade em estoque: <?=$qtEstoque?></h4>
 
-echo "<h3>$produto</h3>";
-echo "<h4>Quantidade em estoque: $qtEstoque</h4>";
-
+<?php
 if ($qtEstoque < $qtCritica) {
-    echo  "<p class=\"comprar\">É necessario comprar!</p>";
+    ?>
+    <p class="comprar">É necessario comprar!</p>
+    
+    <?php
     //condicional aninhada
-    if($qtEstoque ===0){
-        echo "<p class=\"urgente\"><strong> 🚨Urgente🚨</strong></p>";
+    if($qtEstoque ===0){ 
+    ?>
+        <p class="urgente"><strong> 🚨Urgente🚨</strong></p>
+    <?php    
     }
 
-} else {
-    echo "<p class=\"normal\">estoque normal</p>";
-}
 
- ?>  
+} else { ?>
+    <p class=normal>estoque normal</p>
+<?php
+    
+} ?>
+
+ 
  
     <hr>
  
