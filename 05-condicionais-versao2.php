@@ -72,18 +72,20 @@ if ($qtEstoque < $qtCritica) {
 <?php 
 $idade = 70;
 if ($idade <= 12) {
-    echo "<P>criança👹</p>";    
+    $texto = "<P>criança👹</p>";    
 }
 elseif ($idade <= 17){
-    echo "<p>adolescente😠</p>";
+    $texto =  "<p>adolescente😠</p>";
 }
 elseif ($idade <= 59){
-    echo "<p>adulto🥸</p>";
+    $texto =  "<p>adulto🥸</p>";
 }
 else{
-    echo "<p>idoso👴</p>";
+    $texto =  "<p>idoso👴</p>";
 }
 ?>
+
+<p><?=$texto?></p>
 
 
     <hr>
