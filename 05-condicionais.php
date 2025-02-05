@@ -13,7 +13,7 @@
         background-color: yellow;
     }
     .normal{
-        color: green;
+        color: darkgreen;
     }
 </style>
 
@@ -37,7 +37,7 @@ if($numero > 1) echo "<p>$numero é maior que 1</p>";
 ?>
 
 
-    <h2>Composta</h2>
+    <h2>Composta usando if e else</h2>
  <?php 
  $produto = "ultraboock Azus";
  $qtEstoque = 10;//o que temos
@@ -57,9 +57,30 @@ if ($qtEstoque < $qtCritica) {
     echo "<p class=\"normal\">estoque normal</p>";
 }
 
- ?>   
+ ?>  
  
-    <h2>Encadeada</h2>
+    <hr>
+ 
+    <h2>Encadeada usando <code> if/elseif/else</h2>
+<!--verificar a uidade de uma pessoa e determinar se ela é criança, adolescente, adulta e idosa -->
+
+<?php 
+$idade = 70;
+if ($idade <= 12) {
+    echo "<P>criança👹</p>";    
+}
+elseif ($idade <= 17){
+    echo "<p>adolescente😠</p>";
+}
+elseif ($idade <= 59){
+    echo "<p>adulto🥸</p>";
+}
+else{
+    echo "<p>idoso👴</p>";
+}
+?>
+
+
     <hr>
 
     
