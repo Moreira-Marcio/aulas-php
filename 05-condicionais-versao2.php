@@ -27,15 +27,15 @@
 $numero = 5;
 
 if($numero > 1){
-    echo "<p>$numero é maior que 1</p>";
+ ?>   <p><?=$numero?> é maior que 1</p>;
+<?php
 }
-
-
-
-// Sintaxe omitindo as chaves
-if($numero > 1) echo "<p>$numero é maior que 1</p>";
 ?>
 
+
+
+
+    <hr>
 
     <h2>Composta usando if e else</h2>
  <?php 
