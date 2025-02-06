@@ -31,13 +31,16 @@
     <p>Crie uma estrutura de dados (pode ser um array indexado, ou array associativo, ou array de objetos, ou matriz) com 6 nomes de linguagens e uma pequena descrição para cada.</p>
 <table class="table">
     <tr>
+     <th><b>ID</b></th>   
     <th><b>Linguagem</b></th>
     <th><b>Caracteristica</b></th>
     </tr>
     
     
  <?php
+$id = 
  $linguagens = [
+
     "HTML" => "Estruturação",    
      "CSS" => "Estilos",
       "JS" => "Comportamentos",
@@ -49,6 +52,7 @@
  foreach ($linguagens as $linguagem =>$caracteristica) {
  ?>
     <tr>
+        <td><?=$id?></td>
         <td><?=$linguagem?></td>
         <td><?=$caracteristica?></td>
     </tr> 
