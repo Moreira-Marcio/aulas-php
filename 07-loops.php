@@ -65,12 +65,29 @@ $meses = array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
 "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
 
 for ($i = 0; $i < 12; $i++) {                
-    
+
 ?>
    <li><?=$meses[$i]?></li>
 <?php }
 ?>
 </ol>  
+
+<hr>
+
+       <h2>FOREACH (para cada)</h2>
+       <p>é uma versão simplificado do loop FOR e bem mais facil de usar os arrays e objetos</p>
+
+       <h3>acessando array indexado/numerico</h3>
+
+<?php
+$alunos= ["Denis","Paulo","Heloisa"];
+// (nome do array as nomeDeVariavelDeAcesso)
+foreach($alunos as $aluno) {
+ ?>
+ <p>Nome: <?=$aluno?> </p> 
+ <?php 
+ }
+ ?>      
     
 </body>
 </html>
