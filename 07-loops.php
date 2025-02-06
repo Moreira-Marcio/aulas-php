@@ -13,7 +13,16 @@
 
     <p>Executa açoes <b>enquanto a condição for verdadeira</b>.SE a condição inicialmente não for verdadeira, loop nao funciona nenhuma vez</p>
 
-    
+ <?php 
+ $i = 1;
+ while ($i <= 3){
+  ?>
+      <p><?=$i?></p> 
+ <?php
+       $i++;      
+ }
+ 
+ ?>   
 
 
     <h2>do/while (parecido com  repita)</h2>
