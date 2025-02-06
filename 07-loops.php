@@ -48,15 +48,29 @@ do{
     <h2>for (para)</h2>
 
     <p>Executa as ações por uma <b>quantidade determinada</b> de vezes</p>
-
+<ol>
 <?php
 for ($i = 1; $i <= 10; $i++){
 ?> 
-<p><code>i</code> vale: <b></b></p> 
+<p><code>i</code> vale: <b><?= $i?></b></p> 
 <?php
 }
 ?>      
+<hr>
+     <h2>Mini-exercicio</h2>
+     <p>crie um array contendo os 12 meses do ano e usando um loop que vimos, mostre os nomes dos meses em uma lista ordenada</p>
 
+<?php
+$meses = array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+"Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+
+for ($i = 0; $i < 12; $i++) {                
+    
+?>
+   <li><?=$meses[$i]?></li>
+<?php }
+?>
+</ol>  
     
 </body>
 </html>
