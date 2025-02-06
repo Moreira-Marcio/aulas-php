@@ -105,5 +105,23 @@ foreach($alunos as $aluno) {
  <?php
  }
  ?>    
+
+    <h3>Acessando objeto</h3>
+ 
+ <?php
+ $livro = new stdClass();
+ $livro -> titulo = "o senhor dos aneis: a sociedade do anel" ;
+ $livro -> autor = "J.R.R Tolken";
+ $livro -> ano = 1954;
+ 
+ foreach ($livro as $propriedade => $valor){ 
+ ?>
+ <p><?=$propriedade?>: <b><?=$valor?></b></p>  
+ <?php }
+ ?> 
+
+
+
+
 </body>
 </html>
