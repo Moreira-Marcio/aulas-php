@@ -15,9 +15,13 @@
  $faltas = 10;
  
  if($media >= 7 && $faltas <= 10 ) {
-    echo "<p>Aprovado</p>";
+    ?>
+   <p>Aprovado</p>
+ <?php   
  }else {
-    echo "<p>Reprovado</p>";
+    ?>
+    <p>Reprovado</p>
+    <?php
  }
  
  ?>   
@@ -33,9 +37,13 @@
  $temCupom = false;
 
  if ($clienteVip || $temCupom) {
-    echo "<p>Desconto aplicado!</p>";
+  ?>  
+    <p>Desconto aplicado!</p>
+ <?php   
  }else {
-    echo "<p>Sem desconto!</p>";
+    ?>
+    <p>Sem desconto!</p>
+ <?php   
  }
  
  ?>   
@@ -50,10 +58,13 @@
  $usuarioLogado = false;
 
  if(!$usuarioLogado){
-      echo "<a hef=\"login.php\">Login</a>";
+  ?>  
+      <a hef=\"login.php\">Login</a>
+  <?php
  }else {
-    echo "?<span>Bem vindo ao sistema!</span>";
-
+    ?>
+    <span>Bem vindo ao sistema!</span>
+<?php
  }
  ?>   
 
@@ -67,9 +78,13 @@
  $estarBebado = false;
  
  if($idade >= 18 || $acompanhadoPais && !$estarBebado){
-    echo "<p>Entrada permitida!</p>";
+  ?>  
+    <p>Entrada permitida!</p>
+ <?php   
  }else {
-    echo "<p>Entrada negada!</p>";
+   ?> 
+    <p>Entrada negada!</p>
+ <?php   
  }
  ?>   
 </body>
