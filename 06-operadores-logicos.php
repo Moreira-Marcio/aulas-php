@@ -59,7 +59,7 @@
 
  if(!$usuarioLogado){
   ?>  
-      <a hef=\"login.php\">Login</a>
+      <a href="login.php">Login</a>
   <?php
  }else {
     ?>
