@@ -23,12 +23,25 @@
  }
  
  ?>   
-
+<hr>
 
     <h2>do/while (parecido com  repita)</h2>
 
     <p>Repete <b>pelo menos uma vez</b> as ações e, caso a condição continue verdadeira, segue fazendo outros ciclos de repetição até a ccondição se tornar falsa</p>
+<?php
+$j = 5;
+do{
+?>
+<div>
+    <h3>titulo</h3>
+    <p>texto qualquer
 
+    </p>
+</div>
+<?php
+  $j++;
+}while ($j <= 3);
+?>
 
     <h2>for (para)</h2>
 
