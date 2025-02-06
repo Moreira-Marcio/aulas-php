@@ -21,12 +21,41 @@
  }
  
  ?>   
-    
+    <hr>
 
     <!-- o simbolo | é chamado de pipe -->
     <h2>|| (ou/or)</h2>
+    <p><i>Basta apenas que seja <b>verdadeiro/true</b></i></p>
+
+ <?php 
+ /* dar um desconto a um cliente que seja vip ou que tenha cupom*/ 
+ $clienteVip = true; // valor/tipo booleano
+ $temCupom = false;
+
+ if ($clienteVip || $temCupom) {
+    echo "<p>Desconto aplicado!</p>";
+ }else {
+    echo "<p>Sem desconto!</p>";
+ }
+ 
+ ?>   
+
+ <hr>
 
     <h2>! (não/not)</h2>
+
+ <?php
+ // se o usuario nao estiver logado, exibir o bpotao de login, caso contrario exibir uma saudação
+
+ $usuarioLogado = false;
+
+ if(!$usuarioLogado){
+      echo "<a hef=\"login.php\">Login</a>";
+ }else {
+    echo "?<span>Bem vindo ao sistema!</span>";
+
+ }
+ ?>   
     
 </body>
 </html>
