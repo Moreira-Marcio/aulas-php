@@ -56,6 +56,21 @@
 
  }
  ?>   
-    
+
+ <hr>
+
+     <h2>Usando tres operadores combinados para uma logica mais elaborados</h2>
+<?php
+
+ $idade = 16;
+ $acompanhadoPais = true;
+ $estarBebado = false;
+ 
+ if($idade >= 18 || $acompanhadoPais && !$estarBebado){
+    echo "<p>Entrada permitida!</p>";
+ }else {
+    echo "<p>Entrada negada!</p>";
+ }
+ ?>   
 </body>
 </html>
