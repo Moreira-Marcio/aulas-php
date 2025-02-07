@@ -38,7 +38,7 @@
     
     
  <?php
-$id = 
+
  $linguagens = [
 
     "HTML" => "Estruturação",    
