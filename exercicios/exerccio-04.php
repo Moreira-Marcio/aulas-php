@@ -38,8 +38,9 @@
     
     
  <?php
-
- $linguagens = [
+$i = 1;
+ 
+$linguagens = [
 
     "HTML" => "Estruturação",    
      "CSS" => "Estilos",
@@ -52,7 +53,7 @@
  foreach ($linguagens as $linguagem =>$caracteristica) {
  ?>
     <tr>
-        <td><?=$id?></td>
+        <td><?=$i++ ?></td>
         <td><?=$linguagem?></td>
         <td><?=$caracteristica?></td>
     </tr> 
