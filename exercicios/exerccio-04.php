@@ -37,8 +37,8 @@
     <div class="text-center">
     <h1>Loop e Estrutura de Dados</h1>
     <p>Crie uma estrutura de dados (pode ser um array indexado, ou array associativo, ou array de objetos, ou matriz) com 6 nomes de linguagens e uma pequena descrição para cada.</p>
-    <table class="table table-hover table-secondary">
-        <thead class="table-dark">
+    <table class="table table-hover table-secondary table-bordered border-primary ">
+        <thead class="table-dark ">
         <tr>
             <th ><b>ID</b></th>
             <th><b>Linguagem</b></th>
