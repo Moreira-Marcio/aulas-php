@@ -142,6 +142,25 @@
              teste parametro errado
             <p>teste valor/parametro numerico errado: <//?=verificarNegativo("paulo henrique")?></p>-->
         
+        <hr>
+
+        <h2>Função anonima (ou lambida)</h2>
+
+        <?php 
+        $formatarPreco = function (float $valor):string {
+            $precoFormatado = "R$ ".number_format ( $valor ,2,",",".");
+            return $precoFormatado;
+        }
+        ?>
+
+        <p><?=$formatarPreco(1000)?></p>
+        <p><?=$formatarPreco(1500.88)?></p>
+        <p><?=$formatarPreco(10500.2598)?></p>
+        <p><?=$formatarPreco(-1098)?></p>
+
+
+        <hr>
+
         
 
 
