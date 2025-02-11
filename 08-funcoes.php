@@ -140,7 +140,7 @@
             <p>numero -10: <span class="badge text-bg-danger"><?=verificarNegativo(-10)?></span></p>
             <!-- o codigo abaixo gera um erro rellacionado a indução de dados (foi dado string e era esperado um numero inteiro):
              teste parametro errado
-            <p>teste valor/parametro numerico errado: <?=verificarNegativo("paulo henrique")?></p>-->
+            <p>teste valor/parametro numerico errado: <//?=verificarNegativo("paulo henrique")?></p>-->
         
         
 
