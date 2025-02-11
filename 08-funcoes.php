@@ -161,7 +161,15 @@
 
         <hr>
 
-        
+        <h2>Arrow Funtion</h2>
+
+        <?php
+        //util para funções simples de uma unica linha e com return implicito
+        $dobrarValor = fn(int $valor): int => $valor * 2;
+        ?>
+
+           <p><?=$dobrarValor(10)?></p>
+           <p><?=$dobrarValor(100)?></p>
 
 
 
