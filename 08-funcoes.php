@@ -95,6 +95,22 @@
        <?php }
         ?>
 
+        <hr>
+
+        <h3>Função com parametros opcionais</h3>
+
+
+        <?php 
+        //parametros opcionais possuem algum tipo de atribuição com uma valor alternativo para o caso de nao serem passados na chamada da funçao. obs.: sempre devem estar por ultimo na relação de parametros da função
+        
+        function exibirSaudacao($mensagem , $pessoa = ""){
+            return "ola, $mensagem $pessoa";
+        }
+        ?>
+
+            <p>mensagem 1: <?=exibirSaudacao("bom dia ", "João Pedro")?></p>
+            <p>mensagem 2: <?=exibirSaudacao("boa tarde")?></p>
+
 
 
 
