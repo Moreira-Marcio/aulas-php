@@ -112,10 +112,32 @@
             <p>mensagem 2: <?=exibirSaudacao("boa tarde")?></p>
 
 
+            <hr>
 
+            <h2>Indução de tipos de dados</h2>
 
-
-
+        <?php 
+        //indicando que o parametro deve ser do tipo inteiro, e que o retorno da função deve ser do tipo string
+        function verificarNegativo(int $valor):string{
+            if ($valor < 0){
+                return "é negativo";
+            } else {
+                return "não é negativo";
+            }
+        }
+        ?>
+        <!--tipos comuns para uso com indução string -> textos/caracteres em geral
+        int -> numeros inteiros
+        float -> numeros com casas decimais
+        array -> vetor matriz
+        object -> objeto -->
+            <p>numero 10: <?=verificarNegativo(10)?></p>
+            <p>numero -10: <span class="badge text-bg-danger"><?=verificarNegativo(-10)?></span></p>
+            <!-- o codigo abaixo gera um erro rellacionado a indução de dados (foi dado string e era esperado um numero inteiro):
+             teste parametro errado
+            <p>teste valor/parametro numerico errado: <?=verificarNegativo("paulo henrique")?></p>-->
+        
+        
 
 
 
