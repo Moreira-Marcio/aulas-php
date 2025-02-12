@@ -41,7 +41,13 @@
         "nota1" =>7,
         "nota2" => 5,
         "nota3" => 8
-      ]
+     ],
+     [
+      "nome" => "bozó",
+       "nota1" =>7,
+       "nota2" => 5,
+       "nota3" => 10
+     ]
     ];
 
 
@@ -58,7 +64,7 @@
       $media = $verificarMedia($aluno["nota1"],$aluno["nota2"],$aluno["nota3"]);
       $resultado =  aprovacao($media);
       ?>
-       <p class="p-3 mb-2 bg-primary-subtle text-primary-emphasis border border-primary">O aluno: <?= $aluno["nome"]?> foi <?= $resultado ?> com media <?=$media?></p>
+       <p class="p-3 mb-2 bg-primary-subtle border border-primary w-50 p-3 mx-auto p-2">O aluno: <?= $aluno["nome"]?> foi <?= $resultado ?> com media <?=number_format($media,2,",")?></p>
      <?php 
     } 
 
