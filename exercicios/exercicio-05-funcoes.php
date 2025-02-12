@@ -11,23 +11,67 @@
 
 <body>
 
-         <h1>Exercicio 05 Funções</h1>
-    <div class="container">
+         <h1 class="grid text-center">Exercicio 05 Funções</h1>
+
+         <hr>
+    <div class="container grid text-center " >
       <?php 
-      $notaMat=5;
-      $notaPor=10;
-      $notaIng=10;
+      $alunos = [
+       
+      [
+        "nome" => "jao",
+        "nota1" =>7,
+        "nota2" => 5,
+        "nota3" => 8
+      ],
+       [
+        "nome" => "mane",
+        "nota1" =>7,
+        "nota2" => 10,
+        "nota3" => 9
+      ],
+      [
+        "nome" => "banzo",
+        "nota1" =>9,
+        "nota2" => 8,
+        "nota3" => 8
+      ],
+     [
+       "nome" => "louco",
+        "nota1" =>7,
+        "nota2" => 5,
+        "nota3" => 8
+      ]
+    ];
+
+
+ // Arrow Function (SEMPRE PRIMEIRO DECLARAR, PRA DEPOIS USAR)
+      //$verificarMedia= fn(float $totalNotas):float => $totalNotas / 3;
+
+
+      $verificarMedia= fn(float $nota1,float $nota2, float $nota3):float => ($nota1 + $nota2 + $nota3) / 3;
+
+
+    
+
+    foreach ($alunos as $aluno){
+      $media = $verificarMedia($aluno["nota1"],$aluno["nota2"],$aluno["nota3"]);
+      $resultado =  aprovacao($media);
+      ?>
+       <p class="p-3 mb-2 bg-primary-subtle text-primary-emphasis border border-primary">O aluno: <?= $aluno["nome"]?> foi <?= $resultado ?> com media <?=$media?></p>
+     <?php 
+    } 
+
 
       // soma das notas informadas
-      $somaNotas = $notaIng + $notaMat + $notaPor;
+      //$somaNotas = $notaIng + $notaMat + $notaPor;
     
-      // Arrow Function (SEMPRE PRIMEIRO DECLARAR, PRA DEPOIS USAR)
-      $verificarMedia= fn(float $totalNotas):float => $totalNotas / 3;
+     
 
       
       
       // Chamando a função verificarMedia() e guardando o resultado dela
-      $resultadoDaMedia = $verificarMedia($somaNotas);   
+      //$resultadoDaMedia = $verificarMedia($somaNotas);   
       
     
 
@@ -47,7 +91,7 @@
 
       ?>
 
-      <p>sua media é <?=$resultadoDaMedia?> o aluno(a) esta: <?=aprovacao($resultadoDaMedia)?></p>
+      
 
 
     </div>
