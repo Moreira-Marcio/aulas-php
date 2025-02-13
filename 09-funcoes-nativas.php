@@ -136,7 +136,22 @@
 
         <p>Recursos/Funções/Constantes de analize e limpeza de dados atravez das funções <code>filter_var()</code> e <code>filter_imput()</code></p>
 
-        
+        <hr>
+
+        <h3>Validação</h3>
+
+     <?php 
+     $emailErrado = "tiago.com.br";
+     $emailCorreto = "tiago@provedor.com.br";
+
+     ?>
+     
+     <p><?=var_dump(filter_var($emailErrado,FILTER_VALIDATE_EMAIL))?></p>
+     <p><?=var_dump(filter_var($emailCorreto,FILTER_VALIDATE_EMAIL))?></p>
+
+        <hr>
+
+        <h3>Sanitização</h3>
 
     </div>
 
