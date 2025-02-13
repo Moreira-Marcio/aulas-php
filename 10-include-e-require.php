@@ -1,4 +1,4 @@
-<?php include "recursos.php" ?>
+<?php require "recursos.php" ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -29,7 +29,7 @@
         <article>
             <h2>Titulo qualquer...</h2>
 
-            <?php include "textos.html";?>
+            <?php include "textos.php";?>
         </article>
     </div>
 
