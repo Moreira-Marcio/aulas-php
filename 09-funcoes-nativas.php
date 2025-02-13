@@ -45,6 +45,17 @@
      <p><?=$fraseFeia?></p>
      <p><?=$fraseBunitinha?></p>
 
+        <h3><code>explode()</code></h3>
+        <p>Transformar uma string em um array</p>
+
+     <?php  
+     $textoLinguagem = "HTML, CSS, JS, PHP, SQL";
+     $arrayLinguagens = explode(",", $textoLinguagem);
+     ?>   
+
+     <pre><?=var_dump($textoLinguagem)?></pre>
+     <pre><?=var_dump($arrayLinguagens)?></pre>
+
     </div>
 
 
