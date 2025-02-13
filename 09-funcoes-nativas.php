@@ -130,6 +130,14 @@
      <p>Maior valor: <?=max($valores)?></p>
      <p>Arredondamento: <?=round($valorQualquer)?></p>
 
+
+        <hr>
+        <h2>Filtros</h2>
+
+        <p>Recursos/Funções/Constantes de analize e limpeza de dados atravez das funções <code>filter_var()</code> e <code>filter_imput()</code></p>
+
+        
+
     </div>
 
 
