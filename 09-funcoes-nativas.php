@@ -161,6 +161,57 @@
          $ataqueSanitizado = filter_var($ataqueDeRaqui, FILTER_SANITIZE_SPECIAL_CHARS);
          echo $ataqueSanitizado;
      ?>   
+
+          <hr>
+          <h2>Segurança (Criptografia de dados)</h2>
+
+          <h3>algoritmos e recursos </h3>
+
+          <u>
+            <li>md5</li>
+            <li>sha-1</li>
+            <li>sha-256</li>
+            <li><b>password_hash() e password_verify()</b></li>
+          </u>
+      <?php 
+
+      //md5
+      $senhaTextoPuro = "123senac";
+
+      //md5
+      $senhaCodificadaComMD5 = md5($senhaTextoPuro);
+      //sha-1
+      $senhaCodificadaComSHA1 = sha1($senhaTextoPuro);
+
+      //sha-256
+      $senhaCodificadaComSHA256 = hash('sha256',$senhaTextoPuro);
+
+
+      ?>
+      
+      <hr>
+      <p>Senha (texto puro): <?=$senhaTextoPuro?></p>
+      <p>senha (md5):
+          <?=$senhaCodificadaComMD5?> - (<?=strlen($senhaCodificadaComMD5)?>)
+      </p>
+
+      <p>senha (sha-1):
+        <?=$senhaCodificadaComSHA1?> - (<?=strlen($senhaCodificadaComSHA1)?>)
+      </p>
+
+      <p>senha (SHA-256):
+        <?=$senhaCodificadaComSHA256?> - (<?=strlen($senhaCodificadaComSHA256)?>)
+      </p>
+
+      <p class="alert alert_success"><i>método/algoritimo ideal atual</i></p>
+
+      <?php 
+      $senhacodificada = password_hash ($senhaTextoPuro, PASSWORD_DEFAULT);
+      ?>
+
+      <p>semnha codificada com <code>password_hash</code>:
+        <?=$senhacodificada?> (<?=strlen($senhacodificada)?>)   
+    </p>
     </div>
 
 
