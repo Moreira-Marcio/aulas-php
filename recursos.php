@@ -1,7 +1,7 @@
 <?php 
 define("escola","senac");
 
-$curso = "tec. informatica internet";//constante
+$curso = "tec. de informatica para internet";//constante
 $tecnologias = ["html","css", "js"];//array
 
 //função
