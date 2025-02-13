@@ -24,6 +24,13 @@
 
         <hr>
         <p>o aluno fulano de tal tem 20 anos e é <?=verificaIdade(20)?> de idade.</p>
+
+        <hr>
+        <article>
+            <h2>Titulo qualquer...</h2>
+
+            <?php include "textos.html";?>
+        </article>
     </div>
 
 
