@@ -153,6 +153,14 @@
 
         <h3>Sanitização</h3>
 
+     <?php 
+     $ataqueDeRaqui = "<script>
+         document.body.innerHTML = '<h1 Style= backgound:yelow><marquee loop>Sou raqui 🤬🤬🤬!!</marquee></h1>'
+         </script>";
+
+         $ataqueSanitizado = filter_var($ataqueDeRaqui, FILTER_SANITIZE_SPECIAL_CHARS);
+         echo $ataqueSanitizado;
+     ?>   
     </div>
 
 
