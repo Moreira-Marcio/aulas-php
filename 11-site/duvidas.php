@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site com PHP</title>
+    <title>Cursos site com PHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 </head>
@@ -18,9 +18,14 @@
             </nav>
         </header>
         <main>
-            <h2>Bem vindo ao siyte exemplo</h2>
-            <p>Esta  é a primeira pagina do nosso site.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium expedita numquam laboriosam. Voluptate distinctio, illo dolor nobis, eum aperiam, non laudantium mollitia cum ea dolore facere delectus expedita aspernatur aut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam commodi, sed optio veniam aspernatur voluptas perspiciatis facilis quibusdam, nostrum vero cum, error modi! Vitae tempora provident quisquam ullam esse harum?</p>
+            <h2>Pagina de cursos</h2>
+            <p>Veja os cursos disponiveis</p>
+            <ul>
+                <li>Culinaria</li>
+                <li>Direção Defensiva</li>
+                <li>Como escapar de um terremoto</li>
+            </ul>
+            
         </main>
         <footer>
             <p>Site criado para o curso Tec. de Informatica para Internet</p>
