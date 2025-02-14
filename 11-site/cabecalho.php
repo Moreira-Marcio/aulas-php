@@ -13,7 +13,7 @@
             <h1>Site com PHP</h1>
             <nav>
                 <a href="index.php">Home</a>
-                <a href="cursos.php">Cursos</a>
+                <a href="cursos.php">Treinamentos</a>
                 <a href="duvidas.php">Duvidas</a>
             </nav>
         </header>
