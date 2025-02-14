@@ -2,6 +2,12 @@
 </main>
         <footer>
             <p>Site criado para o curso Tec. de Informatica para Internet</p>
+            <?php
+               date_default_timezone_set('America/Sao_Paulo');
+               $dataHora = new DateTime();
+               echo $dataHora->format('d/m/Y H:i:s');
+                
+            ?>
         </footer>
         <hr>
     </div>
