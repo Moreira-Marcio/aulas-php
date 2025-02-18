@@ -18,19 +18,19 @@
             <p class="alert alert-danger">Por favor preencha o campo nome e email</p>
         <?php
         } else {
-            // Capturando os dados transmitidos
-            $nome = $_POST["nome"];
-            $email = $_POST["email"];
-            $idade = $_POST["idade"];
-            $mensagem = $_POST["mensagem"];
+            // Capturando os dados transmitidos e sanitizalos
+            $nome = filter_input(INPUT_POST,"nome",FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+            $email = filter_input (INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+            $idade = filter_input(INPUT_POST, "idade" , FILTER_SANITIZE_NUMBER_INT);
+            $mensagem = filter_input(INPUT_POST, "mensagem", FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
             //capturando os options
             //solução 1: aplicar um ternario checando se existe algum interesse
             //$interesses = isset($_POST["interesses"]) ? $_POST["interesses"]: [];
             //solução 2: usando o operador de coalescencia nula  ??
-            $interesses = $_POST["interesses"] ?? [];
+            $interesses = filter_var_array($_POST["interesses"] ?? [], FILTER_SANITIZE_SPECIAL_CHARS);
 
-            $informativos = $_POST["informativos"] ?? [];
+            $informativos = filter_var_array($_POST["informativos"] ?? [], FILTER_SANITIZE_SPECIAL_CHARS);
 
         ?>
             <!-- Exibindo -->
