@@ -24,6 +24,8 @@ $mensagem = $_POST["mensagem"];
 //solução 2: usando o operador de coalescencia nula  ??
 $interesses = $_POST["interesses"] ?? [];
 
+$informativos = $_POST["informativos"];
+
 ?>
     <!-- Exibindo -->
     <h2>Dados:</h2>
@@ -31,6 +33,7 @@ $interesses = $_POST["interesses"] ?? [];
         <li>Nome: <?=$nome?></li>
         <li>E-mail: <?=$email?></li>
         <li>Idade: <?=$idade?> anos</li>
+        <li>receber informativos: <?=$informativos?></li>
     <!--usamos o empty com versão logica (operador! de negação ) portanto, se não esta vazio, mostre os interesses -->
     <?php if(!empty($interesses)) {?>
         <li>Interesses usando <code>implode()</code>:
