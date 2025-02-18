@@ -31,6 +31,8 @@ $interesses = $_POST["interesses"] ?? [];
         <li>Nome: <?=$nome?></li>
         <li>E-mail: <?=$email?></li>
         <li>Idade: <?=$idade?> anos</li>
+    <!--usamos o empty com versão logica (operador! de negação ) portanto, se não esta vazio, mostre os interesses -->
+    <?php if(!empty($interesses)) {?>
         <li>Interesses usando <code>implode()</code>:
             <!--transformando o array em string-->
              <?=implode(",",$interesses)?>
@@ -40,9 +42,11 @@ $interesses = $_POST["interesses"] ?? [];
                 <?php foreach($interesses as $interesse) {?>
                     <li><?=$interesse?></li>
                 <?php }?>
+           
             </ul>
-
+     
         </li>
+     <?php }?>
         <li>Mensagem: <?=$mensagem?></li>
     </ul>
         
