@@ -19,7 +19,11 @@ $idade = $_POST["idade"];
 $mensagem = $_POST["mensagem"];
 
 //capturando os options
-$interesses = $_POST["interesses"];
+//solução 1: aplicar um ternario checando se existe algum interesse
+//$interesses = isset($_POST["interesses"]) ? $_POST["interesses"]: [];
+//solução 2: usando o operador de coalescencia nula  ??
+$interesses = $_POST["interesses"] ?? [];
+
 ?>
     <!-- Exibindo -->
     <h2>Dados:</h2>
